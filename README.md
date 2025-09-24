@@ -1,6 +1,6 @@
-# Laravel 11 Filament 行動條碼雙步驟驗證
+# Laravel 12 Filament 行動條碼雙重認證
 
-Filament 行動條碼雙步驟驗證採用快速建立簡捷的 TALL（Tailwind CSS、Alpine.js、Laravel 和 Livewire）堆疊應用程式的工具組，雙步驟驗證是強烈建議啟用的安全功能，能為您的帳戶增加多一層的保護。一旦啟用兩步驟驗證，每次您登入時，除了密碼之外，系統還會要求您輸入一組六位數的安全碼和還原代碼。
+Filament 行動條碼雙重認證採用快速建立簡捷的 TALL（Tailwind CSS、Alpine.js、Laravel 和 Livewire）堆疊應用程式的工具組，雙重認證是強烈建議啟用的安全功能，能為您的帳號增加多一層的保護。一旦啟用雙重認證，每次您登入時，除了密碼之外，系統還會要求您輸入一組六位數的驗證碼和緊急恢復碼。
 
 ## 使用方式
 - 打開 php.ini 檔案，啟用 PHP 擴充模組 intl 和 zip，並重啟服務器。
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/GJMGdSu.gif)
-> 雙步驟驗證點選「啟用」後，開啟 Authenticator 應用程式掃描行動條碼後，輸入驗證碼已完成啟用
+![](https://i.imgur.com/pxWPAJE.gif)
+> 雙重認證點選「啟用」後，開啟認證器應用程式掃描行動條碼後，輸入驗證碼已完成啟用
 
-![](https://i.imgur.com/QUS5CfN.gif)
-> 下一次登入時系統將會請您輸入選擇透過 Authenticator 應用程式接收驗證碼
+![](https://i.imgur.com/ShZTmrg.gif)
+> 下一次登入時系統將會請您輸入選擇透過認證器應用程式接收驗證碼

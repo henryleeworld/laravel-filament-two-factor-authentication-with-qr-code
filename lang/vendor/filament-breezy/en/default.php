@@ -49,12 +49,13 @@ return [
                 'disable' => 'Disable',
                 'confirm_finish' => 'Confirm & finish',
                 'cancel_setup' => 'Cancel setup',
+                'confirm' => 'Confirm',
             ],
             'setup_key' => 'Setup key',
             'must_enable' => 'You must enable Two Factor Authentication to use this application.',
             'not_enabled' => [
                 'title' => 'You have not enabled two factor authentication.',
-                'description' => "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.",
+                'description' => 'When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You can use Authenticator apps on your smart phone such as Google Authenticator, Microsoft Authenticator etc to facilitate this',
             ],
             'finish_enabling' => [
                 'title' => 'Finish enabling two factor authentication.',
@@ -89,10 +90,27 @@ return [
             ],
             'update' => [
                 'notify' => 'Token updated successfully!',
+                'submit' => [
+                    'label' => 'Update',
+                ],
             ],
             'copied' => [
                 'label' => 'I have copied my token',
             ],
+        ],
+        'browser_sessions' => [
+            'heading' => 'Browser Sessions',
+            'subheading' => 'Manage your active sessions.',
+            'label' => 'Browser Sessions',
+            'content' => 'If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.',
+            'device' => 'This device',
+            'last_active' => 'Last active',
+            'logout_other_sessions' => 'Log Out Other Browser Sessions',
+            'logout_heading' => 'Log Out Other Browser Sessions',
+            'logout_description' => 'Please enter your password to confirm you would like to log out of your other browser sessions across all of your devices.',
+            'logout_action' => 'Log Out Other Browser Sessions',
+            'incorrect_password' => 'The password you entered was incorrect. Please try again.',
+            'logout_success' => 'All other browser sessions have been logged out successfully.',
         ],
     ],
     'clipboard' => [
@@ -118,4 +136,39 @@ return [
     ],
     'or' => 'Or',
     'cancel' => 'Cancel',
+    'login' => [
+        'username_or_email' => 'Username or Email',
+        'forgot_password_link' => 'Forgot Your Password?',
+        'create_an_account' => 'Create an Account',
+    ],
+    'registration' => [
+        'title' => 'Register',
+        'heading' => 'Create a New Account',
+        'submit' => [
+            'label' => 'Register',
+        ],
+        'notification_unique' => 'An account with this email already exists. Please sign in.',
+    ],
+    'reset_password' => [
+        'title' => 'Forgot Your Password?',
+        'heading' => 'Reset Your Password',
+        'submit' => [
+            'label' => 'Send',
+        ],
+        'notification_error' => 'Error: Please try again later.',
+        'notification_error_link_text' => 'Try Again',
+        'notification_success' => 'Check your email for further instructions!',
+    ],
+    'verification' => [
+        'title' => 'Verify Your Email',
+        'heading' => 'Email Verification Required',
+        'submit' => [
+            'label' => 'Log Out',
+        ],
+        'notification_success' => 'Check your email for further instructions!',
+        'notification_resend' => 'A new verification email has been sent.',
+        'before_proceeding' => 'Before proceeding, please check your email for a verification link.',
+        'not_receive' => 'If you did not receive the email,',
+        'request_another' => 'Click here to request another',
+    ],
 ];
